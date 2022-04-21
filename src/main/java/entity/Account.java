@@ -12,14 +12,23 @@ public class Account {
     private int uid;
     private String username;
     private String password;
-    
+    private int isAdmin;
     public Account() {
     }
 
-    public Account(int uid, String username, String password) {
+    public Account(int uid, String username, String password, int isAdmin) {
         this.uid = uid;
         this.username = username;
         this.password = password;
+        this.isAdmin = isAdmin;
+    }
+
+    public int getIsAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(int isAdmin) {
+        this.isAdmin = isAdmin;
     }
 
     public int getUid() {
@@ -48,7 +57,6 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Account{" + "uid=" + uid + ", username=" + username + ", password=" + password + '}';
+        return "Account{" + "uid=" + uid + ", username=" + username + ", password=" + password + ", isAdmin=" + isAdmin + '}';
     }
-    
 }
