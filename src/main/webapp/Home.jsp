@@ -57,9 +57,26 @@
                                     <li><a href="#">English</a></li>
                                 </ul>
                             </div>
-                            <div class="header__top__right__auth">
-                                <a class="nav-link" href="Login.jsp">Login</a>
+                            <c:if test="${sessionScope.acc.isAdmin == 1}">
+                                <div class="header__top__right__auth">
+                                    <a class="nav-link" href="manager">Manager Product</a>
+                                </div>
+                            </c:if>
+                            <c:if test="${sessionScope.acc != null}">
+                                <div class="header__top__right__auth">
+                                    <a class="nav-link" href="#">Hello ${sessionScope.acc.username}</a>
+                                </div>
+                            </c:if>
+                            <c:if test="${sessionScope.acc != null}">
+                                <div class="header__top__right__auth">
+                                <a class="nav-link" href="logout">Logout</a>
                             </div>
+                            </c:if>
+                            <c:if test="${sessionScope.acc == null}">
+                                <div class="header__top__right__auth">
+                                    <a class="nav-link" href="Login.jsp">Login</a>
+                                </div>
+                            </c:if>
                         </div>
                     </div>
                 </div>
@@ -69,18 +86,18 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/f2p.jpg" alt="logo" width="140" height="100"></a>
+                        <a href="./home"><img src="img/f2p.jpg" alt="logo" width="140" height="100"></a>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li class="active"><a href="./home">Home</a></li>
                             <li><a href="./shop-grid.html">Shop</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shopping Cart</a></li>
+                                    <li><a href="./Cart.jsp">Shopping Cart</a></li>
                                     <li><a href="./checkout.html">Check Out</a></li>
                                 </ul>
                             </li>
@@ -143,7 +160,7 @@
                         <div class="featured__item__pic">
                             <img class="card-img-top" src="${o.img}" alt="coffee" width="320" height="320">
                             <ul class="featured__item__pic__hover">
-                                <li><a href="#" class="fa fa-shopping-cart"></a></li>
+                                <li><a href="cart?id=${o.id}" class="fa fa-shopping-cart"></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
