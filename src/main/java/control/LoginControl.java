@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -40,7 +41,8 @@ public class LoginControl extends HttpServlet {
             request.setAttribute("mess", "Sai tên đăng nhập hoặc mật khẩu.");
             request.getRequestDispatcher("Login.jsp").forward(request, response);
         }else {
-            
+            HttpSession session = request.getSession();
+            session.setAttribute("acc", a);
             response.sendRedirect("home");
         }
     }
