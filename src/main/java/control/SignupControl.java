@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package control;
 
@@ -16,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author tinpi
+ * @author 
  */
 @WebServlet(name = "SignupControl", urlPatterns = {"/signup"})
 public class SignupControl extends HttpServlet {
@@ -40,14 +41,17 @@ public class SignupControl extends HttpServlet {
             response.sendRedirect("Login.jsp");
         }else{
             DAO dao = new DAO();
-            Account a = dao.checkAccoutnExist(username);
-            if(a ==  null){
-                dao.Signup(username, password);
+            Account a = dao.checkAccountExist(username);
+            if(a == null){
+                //dc signup
+                dao.signup(username, password);
                 response.sendRedirect("home");
-            }else {
+            }else{
+                //day ve trang login.jsp
                 response.sendRedirect("Login.jsp");
             }
         }
+        //sign up
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
