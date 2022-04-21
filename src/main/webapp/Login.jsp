@@ -51,7 +51,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./Home.jsp"><img src="img/logo.png" alt=""></a>
+                        <a href="./home"><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                     <div class="breadcrumb__text">
                         <h2>Login</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Home</a>
+                            <a href="./home">Home</a>
                             <span>Login</span>
                         </div>
                     </div>
@@ -83,28 +83,30 @@
 
     <!-- Checkout Section Begin -->
      <div id="logreg-forms">
-         <form class="form-signin" action="login" method="post">
-            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
-            <p class="text-danger">${mess}</p>
-            <p class="text-danger">${warn}</p>
-            <p class="text-danger">${exist}</p>
-            <input name="username" type="text" id="inputEmail" class="form-control" placeholder="Username" required="" autofocus=""> <br>
-            <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required=""> <br>
-            
-            <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button> <br>
-            <!-- <p>Don't have an account!</p>  -->
-            </form>
-            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign up</h1>
-            <form action="signup" class="form-signup">
-                <input name="username" type="text" id="inputEmail" class="form-control" placeholder="Username" required="" autofocus=""> <br>
-                <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required autofocus=""> <br>
-                <input name="repass" type="password" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required autofocus=""> <br>
+            <form action="login" method="post">
+                <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
+                <p class="text-danger">${mess}</p>
+                <input name="username"  type="text" id="inputEmail" class="form-control" placeholder="Username" required="" autofocus=""> <br>
+                <input name="password"  type="password" id="inputPassword" class="form-control" placeholder="Password" required=""><br>
 
-                <button class="btn btn-primary btn-block" type="submit">Sign Up</button> <br>
+                
+                <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+                <hr>
+                
+            </form>
+
+            <form action="signup" method="post">
+                <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign up</h1>
+                <input name="username" type="text" id="user-name" class="form-control" placeholder="Username" required=""><br>
+                <input name="password" type="password" id="user-pass" class="form-control" placeholder="Password" required=""><br>
+                <input name="repass" type="password" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required=""><br>
+
+                <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
+                <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>
             </form>
             <br>
-            
-    </div>
+
+        </div>
     <!-- Checkout Section End -->
 
     <!-- Footer Section Begin -->
