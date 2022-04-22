@@ -7,16 +7,19 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Shopping Cart</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+        
     </head>
-
+    
     <body>
+        
         <jsp:include page="Home.jsp"></jsp:include>
         <div class="shopping-cart">
             <div class="px-4 px-lg-0">
@@ -59,7 +62,7 @@
                                                     <td class="align-middle"><strong>${o.price}</strong></td>
                                                     <td class="align-middle">
                                                         <a href="sub?id=${o.id}"><button class="btnSub">-</button></a> <strong>${o.amount}</strong>
-                                                        <a href="cart?id=${o.id}"><button class="btnAdd">+</button></a>
+                                                        <a href="cart?id=${o.id}"><button class="btnAdd">+</button></a> 
                                                     </td>
                                                             <td class="align-middle"><a href="remove?id=${o.id}" class="text-dark">
                                                         <button type="button" class="btn btn-danger">Delete</button>
