@@ -121,23 +121,18 @@
     <section class="categories">
         <div class="container">
             <div class="row">
-                <div class="categories__slider owl-carousel">
+                
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/coffee.png">
                             <h5><a href="#">Coffee</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/food.png">
-                            <h5><a href="#">Food</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/smooth.png">
-                            <h5><a href="#">Smooth Drink</a></h5>
+                            <h5><a href="#">Tea</a></h5>
                         </div>
                     </div>
-                </div>
+               
             </div>
         </div>
     </section>
@@ -158,9 +153,9 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="featured__item">
                         <div class="featured__item__pic">
-                            <img class="card-img-top" src="${o.img}" alt="coffee" width="320" height="320">
+                            <img class="card-img-top" src="${o.img}" alt="" width="320" height="320">
                             <ul class="featured__item__pic__hover">
-                                <li><a href="cart?id=${o.id}" class="fa fa-shopping-cart"></a></li>
+                                <li><a href="#" class="fa fa-shopping-cart"></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
