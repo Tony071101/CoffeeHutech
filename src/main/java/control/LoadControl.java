@@ -39,8 +39,10 @@ public class LoadControl extends HttpServlet {
         String id = request.getParameter("pid");
         DAO dao = new DAO();
         Product p = dao.getProductByID(id);
-
+        List<Category> listC = dao.getAllCategory();
+        
         request.setAttribute("detail", p);
+        request.setAttribute("listCC", listC);
         request.getRequestDispatcher("Edit.jsp").forward(request, response);
     }
 
