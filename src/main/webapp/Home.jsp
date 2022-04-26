@@ -146,6 +146,13 @@
                     <div class="section-title">
                         <h2>Menu</h2>
                     </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <c:forEach items="${listC}" var="o">
+                                <li class="list-group-item-dark text-white-50"><a href="category?cid=${o.cid}">${o.cname}</a></li>
+                            </c:forEach>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row featured__filter">
