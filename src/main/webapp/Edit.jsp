@@ -64,7 +64,14 @@
                                     <label>Price</label>
                                     <input value="${detail.price}" name="price" type="text" class="form-control" required>
                                 </div>
-
+                                <div class="form-group">
+                                <label>Category</label>
+                                <select name="category" class="form-select" aria-label="Default select example">
+                                    <c:forEach items="${listCC}" var="o">
+                                        <option value="${o.cid}">${o.cname}</option>
+                                    </c:forEach>
+                                </select>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <input type="submit" class="btn btn-success" value="Edit">
