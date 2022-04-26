@@ -39,10 +39,12 @@ public class AddControl extends HttpServlet {
         String pname = request.getParameter("name");
         String pimage = request.getParameter("image");
         String pprice = request.getParameter("price");
+        String pcategory = request.getParameter("category");
+        
         
         
         DAO dao = new DAO();
-        dao.insertProduct(pname, pimage, pprice);
+        dao.insertProduct(pname, pimage, pprice, pcategory);
         response.sendRedirect("manager");
     }
 
