@@ -77,10 +77,7 @@ public class Product {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "Product{" + "id=" + id + ", name=" + name + ", img=" + img + ", price=" + price + ", amount=" + amount + ", sell_ID=" + sell_ID + '}';
-    }
+    
 
     public String getSell_ID() {
         return sell_ID;
@@ -89,5 +86,11 @@ public class Product {
     public void setSell_ID(String sell_ID) {
         this.sell_ID = sell_ID;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" + "id=" + id + ", name=" + name + ", img=" + img + ", price=" + price + ", amount=" + amount + ", sell_ID=" + sell_ID + '}';
+    }
+
 
 }
