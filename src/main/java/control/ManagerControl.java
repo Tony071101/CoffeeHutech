@@ -43,8 +43,9 @@ public class ManagerControl extends HttpServlet {
         int id = a.getUid();
         DAO dao = new DAO();
         List<Product> list = dao.getProductBySellID(id);
+        List<Category> listC = dao.getAllCategory();
         
-        
+        request.setAttribute("listCC", listC);
         request.setAttribute("listP", list);
         request.getRequestDispatcher("ManagerProduct.jsp").forward(request, response);
     }
