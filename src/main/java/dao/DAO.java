@@ -50,6 +50,22 @@ public class DAO {
         }catch (Exception e){}
         return list;
     }
+    public List<Product> getProductBycID (String cid){
+        List<Product> list = new ArrayList<>();
+        String query = "SELECT * FROM coffee_hutech.product\n" +
+                        "where category = ?";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, cid);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                list.add(new Product(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getDouble(4)));
+            }
+        }catch (Exception e){}
+        
+        return list;
+    }
     public Account login(String username, String password){
         String query = "SELECT * FROM coffee_hutech.account\n" +
                 "where username = ?\n" +
@@ -160,25 +176,23 @@ public class DAO {
         }
     }
 
-    public void insertProduct(String name, String img, String price) {
-        String query = "insert into coffee_hutech.product (name, image, price)\n" +
-                        "values (?,?,?)";
+    public void insertProduct(String name, String img, String price, String cate_ID) {
+        String query = "insert into coffee_hutech.product(name, image, price, category) values (?, ?, ?, ?)";
         try {
             conn = new DBContext().getConnection();//mo ket noi voi sql
             ps = conn.prepareStatement(query);
             ps.setString(1, name);
             ps.setString(2, img);
             ps.setString(3, price);
+            ps.setString(4, cate_ID);
             ps.executeUpdate();
         } catch (Exception e) {
         }
     }
 
-    public void editProduct(String name, String image, String price, String pid) {
-        String query = "update coffee_hutech.product \n" +
-                        "set name = ?,\n" +
-                        "image = ?,\n" +
-                        "price = ?\n" +
+    public void editProduct(String name, String image, String price, String cate_ID, String pid) {
+        String query = "update coffee_hutech.product\n" +
+                        "set name = ?, image = ?, price = ?, category = ?\n" +
                         "where id = ?";
         try {
             conn = new DBContext().getConnection();//mo ket noi voi sql
@@ -186,18 +200,19 @@ public class DAO {
             ps.setString(1, name);
             ps.setString(2, image);
             ps.setString(3, price);
-            ps.setString(4, pid);
+            ps.setString(4, cate_ID);
+            ps.setString(5, pid);
             ps.executeUpdate();
         } catch (Exception e) {
         }
     }
-    //public static void main(String[] args) {
-       // DAO dao = new DAO();
+    public static void main(String[] args) {
+        DAO dao = new DAO();
         //List<Product> list = dao.getAllProduct();
-        //List<Category> listC = dao.getAllCategory();
-        //for(Category o : listC) {
-            //System.out.println(o);
-        //}
+        List<Category> listC = dao.getAllCategory();
+        for(Category o : listC) {
+            System.out.println(o);
+        }
         //dao.signup("vinh", "222");
-    //}
+    }
 }
