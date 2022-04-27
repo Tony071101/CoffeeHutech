@@ -9,7 +9,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cofee Hutech Garden</title>
+    <title>The Coffee Hutech </title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -30,6 +30,7 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
+   
 
     <!-- Humberger Begin -->
     
@@ -86,12 +87,17 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
+<<<<<<< Updated upstream
                         <a href="./home"><img src="img/f2p.jpg" alt="logo" width="140" height="100"></a>
+=======
+                        <a href="./index.html"><img src="img/cf.png" alt="logo" width="250" height="50"></a>
+>>>>>>> Stashed changes
                     </div>
                 </div>
                 <div class="col-md-9">
                     <nav class="header__menu">
                         <ul>
+<<<<<<< Updated upstream
                             <li class="active"><a href="./home">Home</a></li>
                             <li><a href="./shop-grid.html">Shop</a></li>
                             <li><a href="#">Pages</a>
@@ -101,6 +107,11 @@
                                     <li><a href="./checkout.html">Check Out</a></li>
                                 </ul>
                             </li>
+=======
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./shop-grid.html">Menu</a></li>
+                           
+>>>>>>> Stashed changes
                         </ul>
                     </nav>
                 </div>
@@ -128,8 +139,18 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
+<<<<<<< Updated upstream
                         <div class="categories__item set-bg" data-setbg="img/categories/smooth.png">
                             <h5><a href="#">Tea</a></h5>
+=======
+                        <div class="categories__item set-bg" data-setbg="img/categories/tea.png">
+                            <h5><a href="#">Tea</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/smooth.png">
+                            <h5><a href="#">Juice Fruit</a></h5>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                
@@ -146,6 +167,7 @@
                     <div class="section-title">
                         <h2>Menu</h2>
                     </div>
+<<<<<<< Updated upstream
                     <div class="featured__controls">
                         <ul>
                             <c:forEach items="${listC}" var="o">
@@ -153,7 +175,16 @@
                             </c:forEach>
                         </ul>
                     </div>
+=======
+                                            
+                    
+>>>>>>> Stashed changes
                 </div>
+              
+						
+						
+				</div>	
+			</section>
             </div>
             <div class="row featured__filter">
                 <c:forEach items="${listP}" var="o">
@@ -196,12 +227,13 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            <a href="./index.html"><img src="img/cf.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: Trường Đại học Công Nghệ Thông Tin khu Công Nghệ Cao</li>
+                            <li>Address: HUTECH UNIVERSITY</li>
                             <li>Phone: +65 11.188.888</li>
                             <li>Email: coffeehutech@gmail.com</li>
+                            <li>Facebook:<a href="https://www.facebook.com/The-Coffee-Hutech-109901345031106"> The Coffee Hutech </a></li> 
                         </ul>
                     </div>
                 </div>
@@ -209,9 +241,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer__copyright">
-                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__text"><p><!-- Link back to Me can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.facebook.com/lenguyenthanhdang/" target="_blank">Me</a>
+  <!-- Link back to Me can't be removed. Template is licensed under CC BY 3.0. --></p></div>
                         <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                     </div>
                 </div>
