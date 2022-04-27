@@ -17,6 +17,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        th1{
+            font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+        margin-right: 5px;
+        }
+        th2{
+            
+        }
+    </style>
     <title>Coffee Hutech Garden</title>
 
     <!-- Google Font -->
@@ -51,7 +64,20 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
+<<<<<<< Updated upstream
                         <a href="./home"><img src="img/logo.png" alt=""></a>
+=======
+                        <a href="./Home.jsp"><img src="img/cf.png" alt=""></a>
+          
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+                        
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
@@ -64,7 +90,7 @@
     <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="img/back.jpg" > 
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -116,12 +142,13 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            <a href="./index.html"><img src="img/cf.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
+                            <li>Address: HUTECH UNIVERSITY</li>
                             <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello@colorlib.com</li>
+                            <li>Email: coffeehutech@gmail.com</li>
+                             <li>Facebook:<a href="https://www.facebook.com/The-Coffee-Hutech-109901345031106"> The Coffee Hutech </a></li> 
                         </ul>
                     </div>
                 </div>
@@ -166,9 +193,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer__copyright">
-                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__text"><p><!-- Link back to Me can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.facebook.com/lenguyenthanhdang/" target="_blank">Me</a>
+  <!-- Link back to Me can't be removed. Template is licensed under CC BY 3.0. --></p></div>
                         <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                     </div>
                 </div>
