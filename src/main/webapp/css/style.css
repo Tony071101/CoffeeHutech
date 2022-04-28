@@ -37,8 +37,9 @@ body {
 	font-family: "Cairo", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+        background-image: url("img/product/bg_3.jpg");
+        background-color: #cccccc;
 }
-
 h1,
 h2,
 h3,
@@ -1415,6 +1416,7 @@ ol {
 	text-align: center;
 	margin-top: 30px;
 }
+
 
 .product__discount__slider.owl-carousel .owl-dots button {
 	height: 12px;
@@ -2918,6 +2920,7 @@ ol {
 @media only screen and (min-width: 1200px) {
 	.container {
 		max-width: 1170px;
+             
 	}
 }
 
