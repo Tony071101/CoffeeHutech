@@ -50,7 +50,7 @@
                                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
                             </div>
                             <div class="header__top__right__language">
-                                <img src="img/product/vietnam.png"width=28" height="25" alt="">
+                                <img src="img/product/vietnam.png" width="28" height="25" alt="">
                                 <div>Tiếng Việt</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul>
@@ -60,7 +60,7 @@
                             </div>
                             <c:if test="${sessionScope.acc.isAdmin == 1}">
                                 <div class="header__top__right__auth">
-                                    <a class="nav-link" href="manager">Đặt Hàng</a>
+                                    <a class="nav-link" href="manager">Quản lý sản phẩm</a>
                                 </div>
                             </c:if>
                             <c:if test="${sessionScope.acc != null}">
@@ -89,7 +89,7 @@
                     <div class="header__logo">
 
                        
-                        <a href="./index.html"><img src="img/cf.png" alt="logo" width="250" height="50"></a>
+                        <a href="./home"><img src="img/cf.png" alt="logo" width="250" height="50"></a>
 
                     </div>
                 </div>
@@ -173,15 +173,6 @@
                         </ul>
                     </div>
 
-                                            
-                    
-
-                </div>
-              
-						
-						
-				</div>	
-			</section>
             </div>
             <div class="row featured__filter">
                 <c:forEach items="${listP}" var="o">
