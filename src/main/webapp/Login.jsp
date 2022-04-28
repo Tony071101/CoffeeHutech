@@ -64,9 +64,9 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-<<<<<<< Updated upstream
-                        <a href="./home"><img src="img/logo.png" alt=""></a>
-=======
+
+                   
+
                         <a href="./Home.jsp"><img src="img/cf.png" alt=""></a>
           
                             </a>
@@ -77,7 +77,7 @@
         </div>
 </div>
                         
->>>>>>> Stashed changes
+
                     </div>
                 </div>
             </div>
@@ -95,10 +95,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Login</h2>
+                        <h2>Đăng Nhập</h2>
                         <div class="breadcrumb__option">
-                            <a href="./home">Home</a>
-                            <span>Login</span>
+                            <a href="./home">Trang Chủ</a>
+                            <span>Đăng Nhập</span>
                         </div>
                     </div>
                 </div>
@@ -110,25 +110,25 @@
     <!-- Checkout Section Begin -->
      <div id="logreg-forms">
             <form action="login" method="post">
-                <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
+                <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Đăng Nhập</h1>
                 <p class="text-danger">${mess}</p>
                 <input name="username"  type="text" id="inputEmail" class="form-control" placeholder="Username" required="" autofocus=""> <br>
                 <input name="password"  type="password" id="inputPassword" class="form-control" placeholder="Password" required=""><br>
 
                 
-                <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+                <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Đăng Nhập</button>
                 <hr>
                 
             </form>
 
             <form action="signup" method="post">
-                <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign up</h1>
+                <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Đăng Ký</h1>
                 <input name="username" type="text" id="user-name" class="form-control" placeholder="Username" required=""><br>
                 <input name="password" type="password" id="user-pass" class="form-control" placeholder="Password" required=""><br>
                 <input name="repass" type="password" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required=""><br>
 
-                <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
-                <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>
+                <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Đăng Nhập</button>
+                <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Trở Về</a>
             </form>
             <br>
 
@@ -142,11 +142,11 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/cf.png" alt=""></a>
+                            <a href="Home.jsp"><img src="img/cf.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: HUTECH UNIVERSITY</li>
-                            <li>Phone: +65 11.188.888</li>
+                            <li>Địa Chỉ: HUTECH UNIVERSITY</li>
+                            <li>SĐT: +65 11.188.888</li>
                             <li>Email: coffeehutech@gmail.com</li>
                              <li>Facebook:<a href="https://www.facebook.com/The-Coffee-Hutech-109901345031106"> The Coffee Hutech </a></li> 
                         </ul>
