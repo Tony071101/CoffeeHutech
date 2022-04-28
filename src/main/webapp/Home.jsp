@@ -50,8 +50,8 @@
                                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
                             </div>
                             <div class="header__top__right__language">
-                                <img src="img/language.png" alt="">
-                                <div>English</div>
+                                <img src="img/product/vietnam.png"width=28" height="25" alt="">
+                                <div>Tiếng Việt</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul>
                                     <li><a href="#">Tiếng Việt</a></li>
@@ -60,7 +60,7 @@
                             </div>
                             <c:if test="${sessionScope.acc.isAdmin == 1}">
                                 <div class="header__top__right__auth">
-                                    <a class="nav-link" href="manager">Manager Product</a>
+                                    <a class="nav-link" href="manager">Đặt Hàng</a>
                                 </div>
                             </c:if>
                             <c:if test="${sessionScope.acc != null}">
@@ -70,12 +70,12 @@
                             </c:if>
                             <c:if test="${sessionScope.acc != null}">
                                 <div class="header__top__right__auth">
-                                <a class="nav-link" href="logout">Logout</a>
+                                <a class="nav-link" href="logout">Đăng Xuất</a>
                             </div>
                             </c:if>
                             <c:if test="${sessionScope.acc == null}">
                                 <div class="header__top__right__auth">
-                                    <a class="nav-link" href="Login.jsp">Login</a>
+                                    <a class="nav-link" href="Login.jsp">Đăng Nhập</a>
                                 </div>
                             </c:if>
                         </div>
@@ -87,19 +87,18 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-<<<<<<< Updated upstream
-                        <a href="./home"><img src="img/f2p.jpg" alt="logo" width="140" height="100"></a>
-=======
+
+                       
                         <a href="./index.html"><img src="img/cf.png" alt="logo" width="250" height="50"></a>
->>>>>>> Stashed changes
+
                     </div>
                 </div>
                 <div class="col-md-9">
                     <nav class="header__menu">
                         <ul>
-<<<<<<< Updated upstream
-                            <li class="active"><a href="./home">Home</a></li>
-                            <li><a href="./shop-grid.html">Shop</a></li>
+
+                            <li class="active"><a href="./home">Trang Chủ</a></li>
+                            <li><a href="ManagerProduct.jsp">Đặt Hàng</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="./shop-details.html">Shop Details</a></li>
@@ -107,11 +106,10 @@
                                     <li><a href="./checkout.html">Check Out</a></li>
                                 </ul>
                             </li>
-=======
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./shop-grid.html">Menu</a></li>
+
+                          
                            
->>>>>>> Stashed changes
+
                         </ul>
                     </nav>
                 </div>
@@ -139,10 +137,9 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-<<<<<<< Updated upstream
-                        <div class="categories__item set-bg" data-setbg="img/categories/smooth.png">
-                            <h5><a href="#">Tea</a></h5>
-=======
+
+                       
+
                         <div class="categories__item set-bg" data-setbg="img/categories/tea.png">
                             <h5><a href="#">Tea</a></h5>
                         </div>
@@ -150,7 +147,7 @@
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/smooth.png">
                             <h5><a href="#">Juice Fruit</a></h5>
->>>>>>> Stashed changes
+
                         </div>
                     </div>
                
@@ -167,7 +164,7 @@
                     <div class="section-title">
                         <h2>Menu</h2>
                     </div>
-<<<<<<< Updated upstream
+
                     <div class="featured__controls">
                         <ul>
                             <c:forEach items="${listC}" var="o">
@@ -175,10 +172,10 @@
                             </c:forEach>
                         </ul>
                     </div>
-=======
+
                                             
                     
->>>>>>> Stashed changes
+
                 </div>
               
 						
@@ -227,7 +224,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/cf.png" alt=""></a>
+                            <a href="Home.jsp"><img src="img/cf.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: HUTECH UNIVERSITY</li>
