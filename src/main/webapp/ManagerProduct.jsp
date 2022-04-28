@@ -12,7 +12,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+        <title>Đặt Hàng</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,23 +20,31 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="css/manager.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+      
         <style>
+        
             img{
                 width: 200px;
                 height: 120px;
+              
             }
-        </style>
-    <body>
+          
+            
+         </style>
+    <body  >
+       
+
         <div class="container">
             <div class="table-wrapper">
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h2>Manage <b>Product</b></h2>
+                            <h2>Danh Sách <b>Đồ Uống</b></h2>
                         </div>
                         <div class="col-sm-6">
-                            <a href="#addEmployeeModal"  class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Product</span></a>
-                            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
+                            <a href="#addEmployeeModal"  class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Thêm Đồ Uống Mới</span></a>
+                            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Xoá</span></a>						
                         </div>
                     </div>
                 </div>
@@ -50,11 +58,12 @@
                                 </span>
                             </th>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Image</th>
-                            <th>Price</th>
-                            <th>Actions</th>
+                            <th>Tên Đồ Uống</th>
+                            <th>Hình Ảnh</th>
+                            <th>Giá</th>
+                            <th>Lựa Chọn</th>
                         </tr>
+                       
                     </thead>
                     <tbody>
                         <c:forEach items="${listP}" var="o">
@@ -82,17 +91,17 @@
                 <div class="clearfix">
                     <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
                     <ul class="pagination">
-                        <li class="page-item disabled"><a href="#">Previous</a></li>
+                        <li class="page-item disabled"><a href="#">Trước</a></li>
                         <li class="page-item active"><a href="#" class="page-link">1</a></li>
                         <li class="page-item"><a href="#" class="page-link">2</a></li>
                         <li class="page-item"><a href="#" class="page-link">3</a></li>
                         <li class="page-item"><a href="#" class="page-link">4</a></li>
                         <li class="page-item"><a href="#" class="page-link">5</a></li>
-                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Sau</a></li>
                     </ul>
                 </div>
             </div>
-            <a href="#"><button type="button" class="btn btn-primary">Back to home</button>
+            <a href="Home.jsp"><button type="button" class="btn btn-primary">Về Trang Chủ</button>
 
         </div>
         <!-- Edit Modal HTML -->
@@ -101,20 +110,20 @@
                 <div class="modal-content">
                     <form action="add" method="post">
                         <div class="modal-header">						
-                            <h4 class="modal-title">Add Product</h4>
+                            <h4 class="modal-title">Thêm Đồ Uống</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         </div>
                         <div class="modal-body">					
                             <div class="form-group">
-                                <label>Name</label>
+                                <label>Tên Đồ Uống</label>
                                 <input name="name" type="text" class="form-control" required>
                             </div>
                             <div class="form-group">
-                                <label>Image</label>
+                                <label>Hình Ảnh</label>
                                 <input name="image" type="text" class="form-control" required>
                             </div>
                             <div class="form-group">
-                                <label>Price</label>
+                                <label>Giá</label>
                                 <input name="price" type="text" class="form-control" required>
                             </div>
                             <div class="form-group">
@@ -134,8 +143,30 @@
                 </div>
             </div>
         </div>
-        
-        
+  
+        <footer class="footer"> 
+  <div class="footer-top">
+    <div class="container"> 
+      <div class="row flex flex-wrap"> 
+                <div class="col-xs-12 col-md-6 col-lg-8">
+          <div class="col-left"> 
+            <div class="footer__about__logo">
+                            <a href="Home.jsp"><img src="img/cf.png" alt=""></a>
+                        </div>
+         
+
+
+  <ul>
+                            <li>Địa Chỉ: HUTECH UNIVERSITY</li>
+                            <li>SĐT: +65 11.188.888</li>
+                            <li>Email: coffeehutech@gmail.com</li>
+                             <li>Facebook:<a href="https://www.facebook.com/The-Coffee-Hutech-109901345031106"> The Coffee Hutech </a></li> 
+                        </ul>
+</div>
+</div>
+		</div>      
+   
+</footer>
     <script src="js/manager.js" type="text/javascript"></script>
 </body>
 </html>
