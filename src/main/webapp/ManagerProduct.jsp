@@ -7,12 +7,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Đặt Hàng</title>
+        <title>Quản lý sản phẩm</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,7 +32,8 @@
           
             
          </style>
-    <body  >
+    </head>
+    <body>
        
 
         <div class="container">
@@ -79,7 +80,7 @@
                                 <td>
                                     <img src="${o.img}" alt="">
                                 </td>
-                                <td>${o.price} $</td>
+                                <td>${o.price} VNĐ</td>
                                 <td>
                                     <a href="loadProduct?pid=${o.id}"  class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                                     <a href="delete?pid=${o.id}" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -147,25 +148,23 @@
         <footer class="footer"> 
   <div class="footer-top">
     <div class="container"> 
-      <div class="row flex flex-wrap"> 
-                <div class="col-xs-12 col-md-6 col-lg-8">
-          <div class="col-left"> 
-            <div class="footer__about__logo">
-                            <a href="Home.jsp"><img src="img/cf.png" alt=""></a>
-                        </div>
-         
-
-
-  <ul>
-                            <li>Địa Chỉ: HUTECH UNIVERSITY</li>
-                            <li>SĐT: +65 11.188.888</li>
-                            <li>Email: coffeehutech@gmail.com</li>
-                             <li>Facebook:<a href="https://www.facebook.com/The-Coffee-Hutech-109901345031106"> The Coffee Hutech </a></li> 
-                        </ul>
-</div>
-</div>
-		</div>      
-   
+        <div class="row flex flex-wrap"> 
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="col-left"> 
+                    <div class="footer__about__logo">
+                        <a href="Home.jsp"><img src="img/cf.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li>Địa Chỉ: HUTECH UNIVERSITY</li>
+                        <li>SĐT: +65 11.188.888</li>
+                        <li>Email: coffeehutech@gmail.com</li>
+                        <li>Facebook:<a href="https://www.facebook.com/The-Coffee-Hutech-109901345031106"> The Coffee Hutech </a></li> 
+                    </ul>
+                </div>
+            </div>
+	</div>      
+    </div>
+  </div>
 </footer>
     <script src="js/manager.js" type="text/javascript"></script>
 </body>
