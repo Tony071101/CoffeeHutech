@@ -1,9 +1,3 @@
-<%-- 
-    Document   : ManagerProduct
-    Created on : Dec 28, 2020, 5:19:02 PM
-    Author     : trinh
---%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -21,60 +15,41 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="css/manager.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/style.css" type="text/css">
-      
+
         <style>
-        
             img{
                 width: 200px;
                 height: 120px;
-              
+
             }
-          
-            
          </style>
     </head>
     <body>
-       
-
         <div class="container">
             <div class="table-wrapper">
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h2>Danh Sách <b>Đồ Uống</b></h2>
+                            <h2>Danh Sách<b> Đồ Uống</b></h2>
                         </div>
                         <div class="col-sm-6">
-                            <a href="#addEmployeeModal"  class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Thêm Đồ Uống Mới</span></a>
-                            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Xoá</span></a>						
+                            <a href="#addEmployeeModal"  class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Thêm Đồ Uống</span></a>					
                         </div>
                     </div>
                 </div>
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                            <th>
-                                <span class="custom-checkbox">
-                                    <input type="checkbox" id="selectAll">
-                                    <label for="selectAll"></label>
-                                </span>
-                            </th>
                             <th>ID</th>
                             <th>Tên Đồ Uống</th>
                             <th>Hình Ảnh</th>
                             <th>Giá</th>
-                            <th>Lựa Chọn</th>
+                            <th>Chỉnh sửa</th>
                         </tr>
-                       
                     </thead>
                     <tbody>
                         <c:forEach items="${listP}" var="o">
                             <tr>
-                                <td>
-                                    <span class="custom-checkbox">
-                                        <input type="checkbox" id="checkbox1" name="options[]" value="1">
-                                        <label for="checkbox1"></label>
-                                    </span>
-                                </td>
                                 <td>${o.id}</td>
                                 <td>${o.name}</td>
                                 <td>
@@ -89,20 +64,8 @@
                         </c:forEach>
                     </tbody>
                 </table>
-                <div class="clearfix">
-                    <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-                    <ul class="pagination">
-                        <li class="page-item disabled"><a href="#">Trước</a></li>
-                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                        <li class="page-item"><a href="#" class="page-link">2</a></li>
-                        <li class="page-item"><a href="#" class="page-link">3</a></li>
-                        <li class="page-item"><a href="#" class="page-link">4</a></li>
-                        <li class="page-item"><a href="#" class="page-link">5</a></li>
-                        <li class="page-item"><a href="#" class="page-link">Sau</a></li>
-                    </ul>
-                </div>
             </div>
-            <a href="Home.jsp"><button type="button" class="btn btn-primary">Về Trang Chủ</button>
+            <a href="home"><button type="button" class="btn btn-primary">Về Trang Chủ</button></a>
 
         </div>
         <!-- Edit Modal HTML -->
@@ -116,19 +79,19 @@
                         </div>
                         <div class="modal-body">					
                             <div class="form-group">
-                                <label>Tên Đồ Uống</label>
+                                <label>Tên Đồ Uống:</label>
                                 <input name="name" type="text" class="form-control" required>
                             </div>
                             <div class="form-group">
-                                <label>Hình Ảnh</label>
+                                <label>Hình Ảnh:</label>
                                 <input name="image" type="text" class="form-control" required>
                             </div>
                             <div class="form-group">
-                                <label>Giá</label>
+                                <label>Giá:</label>
                                 <input name="price" type="text" class="form-control" required>
                             </div>
                             <div class="form-group">
-                                <label>Category</label>
+                                <label>Loại:</label>
                                 <select name="category" class="form-select" aria-label="Default select example">
                                     <c:forEach items="${listCC}" var="o">
                                         <option value="${o.cid}">${o.cname}</option>
@@ -137,14 +100,14 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                            <input type="submit" class="btn btn-success" value="Add">
+                            <input type="button" class="btn btn-default" data-dismiss="modal" value="Hủy bỏ">
+                            <input type="submit" class="btn btn-success" value="Thêm">
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-  
+
         <footer class="footer"> 
   <div class="footer-top">
     <div class="container"> 
@@ -152,7 +115,7 @@
             <div class="col-xs-12 col-md-6 col-lg-8">
                 <div class="col-left"> 
                     <div class="footer__about__logo">
-                        <a href="Home.jsp"><img src="img/cf.png" alt=""></a>
+                            <a href="Home.jsp"><img src="img/banner/logo_coffee.jpg" alt=""></a>
                     </div>
                     <ul>
                         <li>Địa Chỉ: HUTECH UNIVERSITY</li>
@@ -162,7 +125,7 @@
                     </ul>
                 </div>
             </div>
-	</div>      
+        </div>      
     </div>
   </div>
 </footer>
