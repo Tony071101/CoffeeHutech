@@ -9,7 +9,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Coffee Hutech </title>
+    <title>The Coffee Hutech</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -30,10 +30,10 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-   
+
 
     <!-- Humberger Begin -->
-    
+
     <!-- Humberger End -->
 
     <!-- Header Section Begin -->
@@ -43,14 +43,8 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <div class="header__top__right">
-                            <div class="header__top__right__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                            </div>
                             <div class="header__top__right__language">
-                                <img src="img/product/vietnam.png" width="28" height="25" alt="">
+                                <img src="img/product/details/vietnam.png" width="28" height="25" alt="">
                                 <div>Tiếng Việt</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul>
@@ -65,7 +59,7 @@
                             </c:if>
                             <c:if test="${sessionScope.acc != null}">
                                 <div class="header__top__right__auth">
-                                    <a class="nav-link" href="#">Hello ${sessionScope.acc.username}</a>
+                                    <a class="nav-link" href="#">Xin chào ${sessionScope.acc.username}</a>
                                 </div>
                             </c:if>
                             <c:if test="${sessionScope.acc != null}">
@@ -87,33 +81,24 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-
-                       
-                        <a href="./home"><img src="img/cf.png" alt="logo" width="250" height="50"></a>
-
+                        <a href="./home"><img src="img/categories/cf.png" alt="logo" width="250" height="50"></a>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <nav class="header__menu">
                         <ul>
-
                             <li class="active"><a href="./home">Trang Chủ</a></li>
-                            <li><a href="ManagerProduct.jsp">Đặt Hàng</a></li>
-                            <li><a href="#">Pages</a>
+                            <li><a href="#">Đặt Hàng</a></li>
+                            <li><a href="#">Trang</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./Cart.jsp">Shopping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="./shop-details.html">Chi tiết Shop</a></li>
+                                    <li><a href="./Cart.jsp">Giỏ hàng</a></li>
+                                    <li><a href="./checkout.html">Thanh toán</a></li>
                                 </ul>
                             </li>
-
-                          
-                           
-
                         </ul>
                     </nav>
                 </div>
-                
             </div>
             <div class="humberger__open">
                 <i class="fa fa-bars"></i>
@@ -123,34 +108,28 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-    
+
     <!-- Hero Section End -->
 
     <!-- Categories Section Begin -->
     <section class="categories">
         <div class="container">
             <div class="row">
-                
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/coffee.png">
-                            <h5><a href="#">Coffee</a></h5>
+                            <h5><a href="#">Cà phê</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-
-                       
-
                         <div class="categories__item set-bg" data-setbg="img/categories/tea.png">
-                            <h5><a href="#">Tea</a></h5>
+                            <h5><a href="#">Trà</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/smooth.png">
-                            <h5><a href="#">Juice Fruit</a></h5>
-
+                            <h5><a href="#">Nước trái cây</a></h5>
                         </div>
                     </div>
-               
             </div>
         </div>
     </section>
@@ -197,15 +176,15 @@
     <!-- Featured Section End -->
 
     <!-- Banner Begin -->
-    
+
     <!-- Banner End -->
 
     <!-- Latest Product Section Begin -->
-    
+
     <!-- Latest Product Section End -->
 
     <!-- Blog Section Begin -->
-    
+
     <!-- Blog Section End -->
 
     <!-- Footer Section Begin -->
@@ -215,24 +194,14 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="Home.jsp"><img src="img/cf.png" alt=""></a>
+                            <a href="Home.jsp"><img src="img/banner/logo_coffee.jpg" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: HUTECH UNIVERSITY</li>
-                            <li>Phone: +65 11.188.888</li>
+                            <li>Địa chỉ: HUTECH UNIVERSITY</li>
+                            <li>SĐT: +65 11.188.888</li>
                             <li>Email: coffeehutech@gmail.com</li>
                             <li>Facebook:<a href="https://www.facebook.com/The-Coffee-Hutech-109901345031106"> The Coffee Hutech </a></li> 
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer__copyright">
-                        <div class="footer__copyright__text"><p><!-- Link back to Me can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.facebook.com/lenguyenthanhdang/" target="_blank">Me</a>
-  <!-- Link back to Me can't be removed. Template is licensed under CC BY 3.0. --></p></div>
-                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                     </div>
                 </div>
             </div>
